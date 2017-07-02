@@ -2039,6 +2039,11 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   vertical-align: middle; }
 
 /*menu logo */
+.navbar-logo img{
+width:80px;
+min-height:80px;
+
+}
 .rok-iconfont.rok-iconfont-menu,
 .rok-iconfont.rok-iconfont-ext__menu {
   font-size: 37px;
