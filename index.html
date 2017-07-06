@@ -141,9 +141,29 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-xs-center">
-                <h3 class="rok-section-title display-2"></h3>
-                <div class="lead"><p>Ty zaś, gdy chcesz się modlić, wejdź do swej izdebki, zamknij drzwi i módl się do Ojca twego, który jest w ukryciu. Mt 6,6</p></div>
+            <div class="col-md-8 col-md-offset-2 text-xs-right mast slideanim">
+                <!-- <h3 class="rok-section-title display-2"></h3>
+
+                <div class="lead">
+                  <p class="mast__text js-spanize">
+                    Ty zaś, gdy chcesz się modlić,
+                    wejdź do swej izdebki,
+                    zamknij drzwi i módl się do Ojca twego,
+                     który jest w ukryciu. Mt 6,6
+                   </p>
+                </div> -->
+
+
+    <!-- <header class="mast__header"> -->
+      <!-- <h1 class="mast__title js-spanize">Incoming Transmission</h1>
+      <hr class="sep"/> -->
+      <p class="mast__text js-spanize">
+Ty zaś, gdy chcesz się modlić,
+wejdź do swej izdebki,
+zamknij drzwi i módl się do Ojca twego,
+ który jest w ukryciu. Mt 6,6 </p>
+
+    <!-- </header> -->
 
             </div>
         </div>
@@ -152,7 +172,6 @@
 </section>
 
 <section class="rok-section article" id="msg-box3-1c" style="background-color: rgb(242, 242, 242); padding-top: 120px; padding-bottom: 120px;">
-
 
     <div class="container">
         <div class="row">
@@ -328,7 +347,44 @@
         </div>
     </div>
 </section>
+<input name="animation" type="hidden">
 
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("aslide");
+        }
+    });
+  });
+})
+</script>
 
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/tether/tether.min.js"></script>
@@ -343,8 +399,16 @@
   <script src="assets/theme/js/script.js"></script>
   <script src="assets/mobirise-slider-video/script.js"></script>
   <script src="assets/formoid/formoid.min.js"></script>
+  <script src="assets/js/textanimate.js"></script>
+  <script src="assets/js/slideanim.js"></script>
+  <script src="assets/theme/js/jjs.js"></script>
 
 
-  <input name="animation" type="hidden">
+
+
+
+
+
+
   </body>
 </html>
