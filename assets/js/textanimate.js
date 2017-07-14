@@ -2,19 +2,19 @@
 Spanizer
 - Wraps letters with spans, for css animations
 -----*/
+var winTop=10;
+
 $(document).ready(function(){
    $(window).scroll(function() {
       $(".slideanim").each(function(){
       var pos = $(this).offset().top;
       var winTop = $(window).scrollTop();
-      if (pos < winTop + 600) {
+      if (pos < winTop + 900) {
         $(this).addClass("aslide");
       }
-  });
+
 });
-
-
-var off=$(document).scrollTop();
+});
   var s,
   spanizeLetters = {
     settings: {
@@ -33,8 +33,5 @@ var off=$(document).scrollTop();
     },
   };
 
-if (off>100) {
   spanizeLetters.init();
-}
-console.log(off);
 });
