@@ -845,7 +845,7 @@ z-index: 10;
   height: 25rem;
   position: relative; }
   .rok-map iframe {
-    height: 220%;
+    height: 100%;
     width: 100%; }
   .rok-map [data-state-details] {
     color: #6b6763;
