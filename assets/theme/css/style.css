@@ -493,7 +493,7 @@ p.lead,
     white-space: pre-wrap; }
 
 .display-1 {
-  font-size: 4.39rem;
+  font-size: 2.39rem;
   font-weight: 600;
   letter-spacing: -2px;
   margin-bottom: 0.2843em;
@@ -3116,6 +3116,7 @@ html.is-builder .article .lead:not([data-app-remove-it]) + div .btn {
 }
 .socicon-facebook:before {
   content: "\e041";
+
 }
 .socicon-googleplus:before {
   content: "\e042";
@@ -3422,4 +3423,22 @@ html.is-builder .article .lead:not([data-app-remove-it]) + div .btn {
 }
 .socicon-hellocoton:before {
   content: "\e0a7";
+}
+
+
+
+/*COUNTDOWN*/
+.jumbotron{
+    margin-bottom: 0px;
+    background: rgba(255, 203, 175, 0.7);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+border: #942894 solid 1px;
+}
+.cal{
+text-align: center;
+font-size: 3em;
+padding: 20px 0 20px 0;
+border-bottom: #914937 solid 1px;
 }

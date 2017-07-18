@@ -447,9 +447,14 @@ p.lead,
 .lead p {
   font-size: 1.3rem;
   margin-bottom: 2.3125rem;
-text-shadow: 3px 1px 8px rgba(226, 226, 226, 0.42);
-color:rgb(191,191,191);
+  color:#875E34;
+ text-align:justify;
 
+}
+.poster{
+color:#FFE6BB;
+font-size: 1.3rem;
+margin-bottom: 2.3125rem;
 }
 
 .article .lead p, .article .lead ul, .article .lead ol, .article .lead pre, .article .lead blockquote {
@@ -505,7 +510,7 @@ color:rgb(191,191,191);
   margin-top: 3.9rem; }
 
 .display-2 {
-text-shadow: -1px 2px 2px rgba(160, 147, 147, 0.42);
+  color:white;
   font-size: 3rem;
   font-weight: 600;
   letter-spacing: -1px;
