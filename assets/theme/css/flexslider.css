@@ -102,7 +102,7 @@ html[xmlns] .flexslider .slides {
   transition: all 1s ease;
 }
 .loading .flex-viewport {
-  max-height: 400px;
+  max-height: 300px;
 }
 .carousel li {
   margin-right: 5px;
