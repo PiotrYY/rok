@@ -36,7 +36,7 @@
   font-weight: 500;
   letter-spacing: 2px;
   padding: 0.75rem 2.1875rem;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   line-height: 1.5;
   border-radius: 3px;
   -webkit-transition: all .3s ease-in-out;
@@ -753,10 +753,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   min-height: 100vh; }
 
 .rok-overlay {
-  background-color: #000;
+  background-color:#000;
   bottom: 0;
   left: 0;
-  opacity: 0.5;
+  opacity: 0.6;
   position: absolute;
   right: 0;
   top: 0;
@@ -1656,7 +1656,7 @@ z-index: 10;
   padding: 0; }
 .rok-footer-content li, .rok-footer .rok-contacts li {
   border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
-  color: #bcbcbc;
+  color: #fff;
   display: block;
   font-family: "Raleway";
   font-size: 0.875rem;
@@ -3444,5 +3444,8 @@ border-bottom: #914937 solid 1px;
 }
 
 /*SENTENS*/
- normal;
+.to-animate{
+  margin: 150px;
+  padding:150px 100px;
+  font-size:1.7em;
 }
